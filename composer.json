@@ -1,0 +1,28 @@
+{
+    "name": "szonov/tabler-blade-icons",
+    "description": "Collection of tabler icons as Blade components",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "laravel/framework": "^9.0"
+    },
+    "authors": [
+        {
+            "name": "Sergey Zonov",
+            "email": "sergey@zonov.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tabler\\Icons\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tabler\\Icons\\TablerIconsServiceProvider"
+            ]
+        }
+    }
+}

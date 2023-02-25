@@ -24,7 +24,8 @@ is_file("tabler-icons.zip") && unlink("tabler-icons.zip");
 passthru("curl -L -o tabler-icons.zip " . escapeshellarg($download_url));
 
 is_dir("icons") && passthru("rm -r icons");
-passthru("unzip -q tabler-icons.zip icons/*.svg");
+passthru("unzip -q tabler-icons.zip 'svg/*.svg'");
+rename('svg', 'icons');
 
 foreach (glob("icons/*.svg") as $file)
 {

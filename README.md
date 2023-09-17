@@ -4,7 +4,7 @@ Inline SVG Icons from tabler-icons.io For Laravel Blade
 
 ## Introduction
 
-This is a package for the Laravel framework that allows.
+This is a package for the Laravel framework that allows
 you to use svg icons from tabler-icons.io as Blade components
 
 ## Installation
